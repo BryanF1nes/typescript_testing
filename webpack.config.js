@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./src/index.js",
+  entry: "./src/index.ts",
 
   devtool: "inline-source-map",
   devServer: {
@@ -20,7 +20,7 @@ module.exports = {
     }),
   ],
   output: {
-    filename: "[name].bundle.js",
+    filename: "[name].bundle.ts",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
